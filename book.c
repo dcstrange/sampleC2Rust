@@ -13,7 +13,7 @@
         },
         "StringHandling": {
             "createBook": "使用strncpy安全复制字符串",
-            "getBookTitle/Author/ISBN": "提供只读访问接口"
+            "getBookTitle/Author/ISBN":createBook "提供只读访问接口"
         }
     },
     "Dependencies": {
