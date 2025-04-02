@@ -1,3 +1,27 @@
+/* {
+    "File": "book.c",
+    "Purpose": "实现图书管理系统中的图书相关功能",
+    "Implementation": {
+        "MemoryManagement": {
+            "createBook": "动态分配内存并初始化图书对象",
+            "destroyBook": "安全释放图书对象内存"
+        },
+        "DataValidation": {
+            "updateBookPrice": "确保价格非负",
+            "updateBookYear": "确保年份在合理范围内(1800-2024)",
+            "setBookAvailability": "安全设置可用性状态"
+        },
+        "StringHandling": {
+            "createBook": "使用strncpy安全复制字符串",
+            "getBookTitle/Author/ISBN": "提供只读访问接口"
+        }
+    },
+    "Dependencies": {
+        "StandardLibraries": ["stdio.h", "stdlib.h", "string.h"],
+        "CustomHeaders": ["book.h"]
+    }
+} */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

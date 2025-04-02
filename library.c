@@ -1,3 +1,32 @@
+/* {
+    "File": "library.c",
+    "Purpose": "实现图书管理系统中的图书馆管理功能",
+    "Implementation": {
+        "MemoryManagement": {
+            "createLibrary": "动态分配内存并初始化图书馆对象",
+            "destroyLibrary": "递归释放所有图书对象和图书馆对象",
+            "addBook": "安全添加图书到数组",
+            "removeBook": "安全移除图书并重新排列数组"
+        },
+        "SearchOperations": {
+            "findBookByISBN": "线性搜索ISBN（O(n)复杂度）",
+            "findBookByTitle": "使用strstr进行模糊标题匹配"
+        },
+        "SortingOperations": {
+            "sortBooksByTitle": "使用qsort实现标题排序",
+            "sortBooksByAuthor": "使用qsort实现作者排序"
+        },
+        "BookManagement": {
+            "borrowBook": "通过ISBN查找并更新图书状态",
+            "returnBook": "通过ISBN查找并恢复图书状态"
+        }
+    },
+    "Dependencies": {
+        "StandardLibraries": ["stdio.h", "stdlib.h", "string.h"],
+        "CustomHeaders": ["library.h"]
+    }
+} */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

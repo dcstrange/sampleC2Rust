@@ -1,3 +1,40 @@
+/* {
+    "File": "main.c",
+    "Purpose": "实现图书管理系统的主程序入口和用户界面",
+    "Implementation": {
+        "UserInterface": {
+            "printMenu": "提供交互式命令行菜单",
+            "main": "实现主程序循环和用户交互逻辑"
+        },
+        "MenuOptions": {
+            "addBook": "添加新书到图书馆",
+            "removeBook": "从图书馆移除图书",
+            "findBook": "查找特定图书",
+            "borrowBook": "借阅图书",
+            "returnBook": "归还图书",
+            "listAllBooks": "显示所有图书",
+            "sortBooks": "按书名或作者排序"
+        },
+        "DataInitialization": {
+            "testData": "初始化包含示例图书的测试数据"
+        }
+    },
+    "Dependencies": {
+        "StandardLibraries": ["stdio.h"],
+        "CustomHeaders": ["book.h", "library.h"]
+    },
+    "ErrorHandling": {
+        "InputValidation": "使用gets和scanf安全读取用户输入",
+        "MemoryManagement": "检查对象创建是否成功",
+        "OperationStatus": "显示操作成功或失败的反馈"
+    },
+    "UserExperience": {
+        "MenuSystem": "清晰的菜单选项和操作提示",
+        "Feedback": "每个操作后提供状态反馈",
+        "DataDisplay": "格式化的图书信息展示"
+    }
+} */
+
 #include <stdio.h>
 #include "book.h"
 #include "library.h"

@@ -1,3 +1,36 @@
+/* {
+    "File": "book.h",
+    "Purpose": "定义图书管理系统中的图书相关数据结构和接口",
+    "Architecture": {
+        "DataStructures": {
+            "Book": "包含图书基本信息的结构体，包括标题、作者、ISBN、出版年份、价格和可用性状态"
+        },
+        "Constants": {
+            "MAX_TITLE_LEN": "图书标题最大长度限制",
+            "MAX_AUTHOR_LEN": "作者名字最大长度限制",
+            "MAX_ISBN_LEN": "ISBN号码最大长度限制"
+        },
+        "Functions": {
+            "createBook": "创建新的图书对象",
+            "destroyBook": "销毁图书对象",
+            "printBook": "打印图书信息",
+            "updateBookPrice": "更新图书价格",
+            "updateBookYear": "更新出版年份",
+            "isBookAvailable": "检查图书可用性",
+            "setBookAvailability": "设置图书可用性",
+            "getBookTitle": "获取图书标题",
+            "getBookAuthor": "获取图书作者",
+            "getBookISBN": "获取图书ISBN"
+        }
+    },
+    "Dependencies": {
+        "StandardLibraries": ["stdio.h", "stdlib.h", "string.h"],
+        "CustomHeaders": []
+    },
+    "Usage": "作为图书管理系统的基础头文件，提供图书对象的基本操作接口",
+    "DesignPatterns": ["封装", "访问器模式"]
+} */
+
 #ifndef BOOK_H
 #define BOOK_H
 

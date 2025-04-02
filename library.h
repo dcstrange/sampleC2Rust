@@ -1,3 +1,36 @@
+/* {
+    "File": "library.h",
+    "Purpose": "定义图书管理系统中的图书馆相关数据结构和接口",
+    "Architecture": {
+        "DataStructures": {
+            "Library": "包含图书集合的结构体，使用固定大小数组存储图书指针"
+        },
+        "Constants": {
+            "MAX_BOOKS": "图书馆最大藏书量限制"
+        },
+        "Functions": {
+            "createLibrary": "创建新的图书馆对象",
+            "destroyLibrary": "销毁图书馆对象",
+            "addBook": "添加新书到图书馆",
+            "removeBook": "从图书馆移除图书",
+            "findBookByISBN": "通过ISBN查找图书",
+            "findBookByTitle": "通过标题查找图书",
+            "listAllBooks": "列出所有图书",
+            "borrowBook": "借出图书",
+            "returnBook": "归还图书",
+            "getBookCount": "获取当前图书数量",
+            "sortBooksByTitle": "按标题排序图书",
+            "sortBooksByAuthor": "按作者排序图书"
+        }
+    },
+    "Dependencies": {
+        "StandardLibraries": ["stdio.h", "stdlib.h", "string.h"],
+        "CustomHeaders": ["book.h"]
+    },
+    "Usage": "作为图书管理系统的核心头文件，提供图书馆管理的主要功能接口",
+    "DesignPatterns": ["集合模式", "迭代器模式"]
+} */
+
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
