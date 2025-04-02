@@ -115,9 +115,9 @@ int main(void) {
     }
     
     // 添加测试数据
-    Book* book1 = createBook("C程序设计", "谭浩强", "9787111495482", 2015, 39.00);
-    Book* book2 = createBook("数据结构", "严蔚敏", "9787302147726", 2012, 35.00);
-    Book* book3 = createBook("算法导论", "Thomas H. Cormen", "9787111187776", 2009, 89.00);
+    Book* book1 = createBook("C程序设计", "谭浩强", "9787111495482", 39.00, 2015, 1);
+    Book* book2 = createBook("数据结构", "严蔚敏", "9787302147726", 35.00, 2012, 1);
+    Book* book3 = createBook("算法导论", "Thomas H. Cormen", "9787111187776", 89.00, 2009, 1);
     
     addBook(library, book1);
     addBook(library, book2);
@@ -157,7 +157,7 @@ int main(void) {
                 scanf("%d", &year);
                 getchar();
                 
-                Book* newBook = createBook(title, author, isbn, year, price);
+                Book* newBook = createBook(title, author, isbn, price, year, 1);
                 if (newBook != NULL && addBook(library, newBook)) {
                     printf("添加成功！\n");
                 } else {
