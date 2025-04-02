@@ -2,9 +2,9 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 OBJS = main.o book.o library.o
 
-all: library_system
+all: book_system
 
-library_system: $(OBJS)
+book_system: $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $(OBJS)
 
 main.o: main.c book.h library.h
@@ -17,6 +17,6 @@ library.o: library.c library.h
 	$(CC) $(CFLAGS) -c library.c
 
 clean:
-	rm -f $(OBJS) library_system
+	rm -f $(OBJS) book_system
 
 .PHONY: all clean 

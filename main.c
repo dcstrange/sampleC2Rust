@@ -2,6 +2,12 @@
 #include "book.h"
 #include "library.h"
 
+/* {
+    "What": "打印系统主菜单",
+    "When": "用户需要选择操作时",
+    "Why": "提供清晰的操作界面，展示所有可用功能",
+    "How": "使用printf函数格式化输出菜单选项"
+} */
 void printMenu() {
     printf("\n=== 图书管理系统 ===\n");
     printf("1. 添加新书\n");
@@ -16,6 +22,12 @@ void printMenu() {
     printf("请选择操作: ");
 }
 
+/* {
+    "What": "系统主函数，实现图书管理系统的核心功能",
+    "When": "系统启动时",
+    "Why": "提供完整的图书管理系统功能，包括图书的增删改查和排序",
+    "How": "创建图书馆对象，初始化测试数据，实现交互式菜单系统"
+} */
 int main() {
     Library* library = createLibrary();
     if (library == NULL) {
