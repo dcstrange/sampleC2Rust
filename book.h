@@ -79,7 +79,7 @@ typedef struct {
     "Why": "提供统一的图书对象创建接口，确保所有必要字段都被正确初始化",
     "How": "动态分配内存并初始化所有字段"
 } */
-Book* createBook(const char* title, const char* author, const char* isbn, float price, int year, int available)
+Book* createBook(const char* title, const char* author, const char* isbn, float price, int year, int available);
 
 /* {
     "What": "销毁图书对象并释放内存",
@@ -251,7 +251,7 @@ int isBookAvailable(const Book* book);
         }
     }
 } */
-void setBookAvailability(Book* book, int available);
+int setBookAvailability(Book* book, int available);
 
 /* {
     "What": "获取图书标题",

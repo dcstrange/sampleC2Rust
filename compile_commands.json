@@ -1,0 +1,38 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "main.c"
+    ],
+    "directory": "/home/fei/git/sampleC2Rust",
+    "file": "/home/fei/git/sampleC2Rust/main.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "book.c"
+    ],
+    "directory": "/home/fei/git/sampleC2Rust",
+    "file": "/home/fei/git/sampleC2Rust/book.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "library.c"
+    ],
+    "directory": "/home/fei/git/sampleC2Rust",
+    "file": "/home/fei/git/sampleC2Rust/library.c"
+  }
+]
